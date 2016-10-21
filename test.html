@@ -1,0 +1,56 @@
+
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<title>My Title</title>
+<style>
+h1 { color: #333333; font-family: 'Bitter', serif; font-size: 50px; font-weight: normal; line-height: 54px; margin: 0 0 54px; }
+
+p { color: #333333; font-family: Georgia, serif; font-size: 18px; line-height: 28px; margin: 0 0 28px; }
+</style>
+
+
+</head>
+
+<body>
+
+  <h1>Title</h1>
+  <p>This is a paragraph. Well, kind of.</p>
+
+  <script>
+  // Creating a div element
+  var divElement = document.createElement("Div");
+  divElement.id = "divID";
+
+  // Style it
+  divElement.style.textAlign = "justify";
+  divElement.style.fontWeight = "bold";
+  divElement.style.fontSize = "smaller";
+  divElement.style.paddingTop = "15px";
+
+  // Adding a paragraph to it
+  var paragraph = document.createElement("P");
+  var text = document.createTextNode("Add some text");
+  paragraph.appendChild(text);
+  divElement.appendChild(paragraph);
+
+  // Adding a button, cause why not!
+  var button = document.createElement("Button");
+  var textForButton = document.createTextNode("Release the alert");
+  button.appendChild(textForButton);
+  button.addEventListener("click", function(){
+  	alert("Hi!");
+  });
+  divElement.appendChild(button);
+
+  // Appending the div element to body
+  document.getElementsByTagName("body")[0].appendChild(divElement);
+
+  </script>
+  
+
+</body>
+</html>

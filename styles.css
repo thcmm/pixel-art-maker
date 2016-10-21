@@ -1,0 +1,75 @@
+
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* set attributes on all col classes by universal selector */
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+}
+
+.col-1 {
+  width: 8.33%;
+  background-color: green;
+}
+.col-2 {width: 16.66%;}
+.col-3 {width: 100%;} /* menu */
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;} /* header */
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+    background-color: SteelBlue;
+    color: #ffffff;
+    padding: 5px;
+}
+
+/* Menu */
+.menu ul {
+    border-right: 1px solid #000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    float: left; /* make menu horizontal */
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color :cornflowerblue;
+    color: #ffffff;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: lightSkyBlue;
+}
+
+.bkgArea {
+  border-radius: 10px 35px;
+  border: 2px solid #ff0000;
+  max-width:98%;
+  padding:1%; /* A percentage that, when doubled and added to the above, makes 100%. */
+}
+
+#main {
+
+}
+
+#menuDiv {
+
+}

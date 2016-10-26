@@ -113,6 +113,7 @@ function mClearD(obj) {
 
 function mClearU(obj) {
   console.log("btn:ClearUp");
+  window.location.reload();
 }
 // END : Clear DrawPad
 

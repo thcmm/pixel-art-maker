@@ -5,7 +5,7 @@ console.log("gridCtrl.js loaded");
 var theInkColor = "black";
 makeColorButtons();
 createDrawArea(2553);
-
+updateActiveColorFrame("black");
 
 function createDrawArea (gridResolution) {
   for (var i = 1; i < gridResolution; i++) {
@@ -47,6 +47,7 @@ button.addEventListener("click", changeInkColor("blue"));
 divElement.appendChild(button);
 }
 
+// Update frame color to reflect active ink color
 function updateActiveColorFrame(frameColor) {
   // var theFrameC = frameColor;
   // console.log(theFrameC);
@@ -56,14 +57,12 @@ function updateActiveColorFrame(frameColor) {
 }
 
 
-
-
+// START : UpDate Pen Color
 function mBlackD(obj) {
     obj.style.backgroundColor = "#1ec5e5";
     obj.innerHTML = "Black";
     // obj.getElementById;
     theInkColor = "black";
-
 }
 
 function mBlackU(obj) {
@@ -105,23 +104,7 @@ function mRedU(obj) {
   updateActiveColorFrame("red");
 }
 
-/* ADD more colors
-function mOrangeD(obj) {
-    obj.style.backgroundColor = "#1ec5e5";
-    obj.innerHTML = "orange";
-    // obj.getElementById;
-    theInkColor = "orange";
-}
-
-function mUp(obj) {
-    obj.style.backgroundColor="orange";
-    obj.innerHTML="Orange";
-}
-*/
-
-
-
-
+// END : UpDate Pen Color
 
 
 /* Grid by div

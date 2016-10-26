@@ -34,12 +34,12 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 
     <div id="main" class="drawPad"></div>
     <!-- drawPad -->
-    <div id="colorPalette" class="col-3 palette">
-        <ul>
-            <li onmousedown="mBlackD(this)" onmouseup="mBlackU(this)" style="background-color:#000;width:50px;height:25px;padding:5px;">Black</li>
-            <li onmousedown="mBlueD(this)" onmouseup="mBlueU(this)" style="background-color:#0000ff;width:50px;height:25px;padding:5px;">Blue</li>
-            <li onmousedown="mGreenD(this)" onmouseup="mGreenU(this)" style="background-color:#009933;width:50px;height:25px;padding:5px;">Green</li>
-            <li onmousedown="mRedD(this)" onmouseup="mRedU(this)" style="background-color:#ff3300;width:50px;height:25px;padding:5px;">Red</li>
+    <div id="horizontalmenu" class="col-3"> <!-- palette  -->
+        <ul> <!--  style="background-color:#000;width:50px;height:25px;padding:5px;" -->
+            <li class="colorButtonsBase colorButtonBlack" onmousedown="mBlackD(this)" onmouseup="mBlackU(this)">Black</li>
+            <li class="colorButtonsBase colorButtonBlue" onmousedown="mBlueD(this)" onmouseup="mBlueU(this)">Blue</li>
+            <li class="colorButtonsBase colorButtonGreen" onmousedown="mGreenD(this)" onmouseup="mGreenU(this)">Green</li>
+            <li class="colorButtonsBase colorButtonRed" onmousedown="mRedD(this)" onmouseup="mRedU(this)">Red</li>
             <!-- <li onclick="return handle(event)">Alert</li> -->
         </ul>
     </div>

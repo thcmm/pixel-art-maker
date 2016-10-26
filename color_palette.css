@@ -1,33 +1,70 @@
-/* fdas */
+/* Color Picker Button Styles */
 
 
-.colorPalette {
-  
+ /* START : color picker buttons */
+.colorButtonsBase {
+   width:70px;
+   height:25px;
+   padding:3px;
+   margin: 3px;
 }
+
+
+.colorButtonBlack { /* Black color picker button */
+  background-color:#000;
+}
+
+.colorButtonBlue { /* Blue color picker button */
+  background-color:#00f;
+}
+
+.colorButtonGreen { /* Green color picker button */
+  background-color:#093;
+}
+
+.colorButtonRed { /* Red color picker button */
+  background-color:#f30;
+}
+/* END : color picker buttons */
+
+.colorButtonBase li a:hover {
+    /*background-color: lightSkyBlue;*/
+    border-color: #fff;
+    background-color: #555;
+    color: green;
+}
+
+
 
 /* Menu */
 
 .palette {
-  margin-left: auto;
-  margin-right: auto;
+  /*margin-left: auto;
+  margin-right: auto;*/
 }
 .palette ul {
-    border-right: 1px solid #000;
+
+    border: 2px solid #f30;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    /*padding: 0;*/
 }
 .palette li {
     float: left;  make menu horizontal */
+    border-bottom: 1px solid #555;
     margin-bottom: 0px;
-    color: green;
-    /*background-color: white;*/
-    color: #ffffff;
+    text-align:center;
+    color: #fff;
     box-shadow: 0 1px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .palette li:hover {
-    /*background-color: lightSkyBlue;*/
+    /*color: red;*/
+    border-color: #fff;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
+
+
+
 
 .makeRed {background-color: red;}
 
@@ -35,3 +72,46 @@
 #menuDiv {
 
 }
+
+
+/* Defines the unordered list attributes: the list marker is removed, the space
+between the element border and the element content is set to 0 using the padding property
+and the space around the elements is also 0. */
+#horizontalmenu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+ }
+/* Defines the list items' attributes: the items will float to the left, their position
+will be relative to the normal one; the space between the element's right border and the element
+content is set to 20 using the padding property; the items are displayed
+in a block with a 3D inset border. */
+#horizontalmenu li {
+  float: left;
+  position: relative;
+  padding-right: 20;
+  text-align:center;
+  color: #fff;
+  display: block;
+  border: 1px solid #000000;
+  border-radius: 5px 5px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  /*border-style: inset; }*/
+/* Hides the list items of the unordered list. */
+#horizontalmenu li ul {
+  display: none;
+  position: absolute; }
+/* When the mouse pointer hovers over the menu elements, the child unordered
+list items are shown in blocks; the width is set in em units. */
+#horizontalmenu li:hover ul{
+  display: block;
+  background: none;
+  height: auto;
+  width: 8em; }
+/* No floating elements allowed on either the left or the right side of
+the elements. */
+#horizontalmenu li ul li{
+  clear: both;
+  border-style: none;
+}
+/* the end of the CSS code section; */

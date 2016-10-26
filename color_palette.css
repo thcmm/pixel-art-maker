@@ -5,8 +5,8 @@
 .colorButtonsBase {
    width:70px;
    height:25px;
-   padding:3px;
-   margin: 3px;
+   padding:2px;
+   margin: 6px;
 }
 
 
@@ -27,43 +27,22 @@
 }
 /* END : color picker buttons */
 
+/* START : Clear Button */
+#clearDrawPadButton { /* Red color picker button */
+  float:right;
+  margin-left: 180px;
+  background-color:#6b695e;
+}
+
+
 .colorButtonBase li a:hover {
     /*background-color: lightSkyBlue;*/
     border-color: #fff;
-    background-color: #555;
-    color: green;
 }
 
 
 
 /* Menu */
-
-.palette {
-  /*margin-left: auto;
-  margin-right: auto;*/
-}
-.palette ul {
-
-    border: 2px solid #f30;
-    list-style-type: none;
-    margin: auto;
-    /*padding: 0;*/
-}
-.palette li {
-    float: left;  make menu horizontal */
-    border-bottom: 1px solid #555;
-    margin-bottom: 0px;
-    text-align:center;
-    color: #fff;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-.palette li:hover {
-    /*color: red;*/
-    border-color: #fff;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-
 
 
 .makeRed {background-color: red;}
@@ -93,10 +72,10 @@ in a block with a 3D inset border. */
   text-align:center;
   color: #fff;
   display: block;
-  border: 1px solid #000000;
+  border: 2px solid #fff;
   border-radius: 5px 5px;
   box-shadow: 0 1px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  /*border-style: inset; }*/
+  border-style: inset; }
 /* Hides the list items of the unordered list. */
 #horizontalmenu li ul {
   display: none;
@@ -105,7 +84,8 @@ in a block with a 3D inset border. */
 list items are shown in blocks; the width is set in em units. */
 #horizontalmenu li:hover ul{
   display: block;
-  background: none;
+  /*background: none;*/
+  background-color: purple;
   height: auto;
   width: 8em; }
 /* No floating elements allowed on either the left or the right side of

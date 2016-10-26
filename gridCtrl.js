@@ -106,6 +106,17 @@ function mRedU(obj) {
 
 // END : UpDate Pen Color
 
+// START : Clear DrawPad
+function mClearD(obj) {
+    console.log("btn:ClearDown");
+}
+
+function mClearU(obj) {
+  console.log("btn:ClearUp");
+}
+// END : Clear DrawPad
+
+
 
 /* Grid by div
 pixArea = document.createElement("div");

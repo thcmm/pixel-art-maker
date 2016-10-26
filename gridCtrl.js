@@ -1,15 +1,30 @@
+/* Pixel drawPad ****************************************************\
+* Author: T.Sarkisian                                                *
+* Date: Unknown but likely sometime in the early Darker Days of g36  *
+\ *******************************************************************/
 
-/* Creating a div element */
+
+/* 2DO: More than one can imagine
+* - Axe the global theInkColor
+* - Change cursor type
+* - Change button onClick color or border color when clicked
+* - Continuous draw mode
+* - Track mouseX, mouseY
+* - Add annoying sound effects
+* SOMEDAY:
+* - store clicked locations and draw color, save, redraw
+*/
+
 "use strict";
 console.log("gridCtrl.js loaded");
-var theInkColor = "black";
-makeColorButtons();
+var theInkColor = "black"; /* Globals can be dat'purty - even so, get rid of this!!! */
+/* TO:DO Dynamic button generator makeColorButtons(); */
 createDrawArea(2553);
 updateActiveColorFrame("black");
 
+/* Plot drawPad */
 function createDrawArea (gridResolution) {
   for (var i = 1; i < gridResolution; i++) {
-    /* Grid by li */
     var pixArea = document.createElement("div");
     document.getElementById("main").appendChild(pixArea);
     // pixArea.innerText = i; fill text
@@ -19,22 +34,22 @@ function createDrawArea (gridResolution) {
   }
 }
 
-
+// SKRIV!!!
 function drawInkColor() {
-    // console.log(newColor + " boo hoo");
     event.target.style.backgroundColor = theInkColor;
 }
 
-
+// Update Ink Color
 function changeInkColor(theColor) {
   var newColor = theColor;
   console.log(newColor + " yeat boo");
 }
 
+// TESTER
 function handle(e) {
   alert(e.type);
 }
-
+/* Evental dynamic button generator
 function makeColorButtons() {
 // create div
 var divElement = document.createElement("Div");
@@ -46,6 +61,8 @@ button.appendChild(textForButton);
 button.addEventListener("click", changeInkColor("blue"));
 divElement.appendChild(button);
 }
+*/
+
 
 // Update frame color to reflect active ink color
 function updateActiveColorFrame(frameColor) {
@@ -53,9 +70,7 @@ function updateActiveColorFrame(frameColor) {
   // console.log(theFrameC);
   var el = document.getElementById("mainContainer");
   el.style.backgroundColor = frameColor;
-  // el.style.background-color = frameColor;
 }
-
 
 // START : UpDate Pen Color
 function mBlackD(obj) {

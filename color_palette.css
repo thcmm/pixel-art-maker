@@ -42,29 +42,14 @@
 
 
 
-/* Menu */
+/* START : Color Picker Menu */
 
-
-.makeRed {background-color: red;}
-
-
-#menuDiv {
-
-}
-
-
-/* Defines the unordered list attributes: the list marker is removed, the space
-between the element border and the element content is set to 0 using the padding property
-and the space around the elements is also 0. */
 #horizontalmenu ul {
   padding: 0;
   margin: 0;
   list-style: none;
  }
-/* Defines the list items' attributes: the items will float to the left, their position
-will be relative to the normal one; the space between the element's right border and the element
-content is set to 20 using the padding property; the items are displayed
-in a block with a 3D inset border. */
+
 #horizontalmenu li {
   float: left;
   position: relative;
@@ -75,23 +60,25 @@ in a block with a 3D inset border. */
   border: 2px solid #fff;
   border-radius: 5px 5px;
   box-shadow: 0 1px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  border-style: inset; }
+  border-style: inset;
+}
 /* Hides the list items of the unordered list. */
 #horizontalmenu li ul {
   display: none;
-  position: absolute; }
-/* When the mouse pointer hovers over the menu elements, the child unordered
-list items are shown in blocks; the width is set in em units. */
+  position: absolute;
+}
+
 #horizontalmenu li:hover ul{
   display: block;
   /*background: none;*/
   background-color: purple;
   height: auto;
-  width: 8em; }
+  width: 8em;
+}
 /* No floating elements allowed on either the left or the right side of
 the elements. */
 #horizontalmenu li ul li{
   clear: both;
   border-style: none;
 }
-/* the end of the CSS code section; */
+/* END : Color Picker Menu */

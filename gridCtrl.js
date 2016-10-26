@@ -47,15 +47,28 @@ button.addEventListener("click", changeInkColor("blue"));
 divElement.appendChild(button);
 }
 
+function updateActiveColorFrame(frameColor) {
+  // var theFrameC = frameColor;
+  // console.log(theFrameC);
+  var el = document.getElementById("mainContainer");
+  el.style.backgroundColor = frameColor;
+  // el.style.background-color = frameColor;
+}
+
+
+
 
 function mBlackD(obj) {
     obj.style.backgroundColor = "#1ec5e5";
     obj.innerHTML = "Black";
     // obj.getElementById;
     theInkColor = "black";
+
 }
+
 function mBlackU(obj) {
   obj.style.backgroundColor = "black";
+  updateActiveColorFrame("black");
 }
 
 function mBlueD(obj) {
@@ -66,6 +79,7 @@ function mBlueD(obj) {
 }
 function mBlueU(obj) {
   obj.style.backgroundColor = "blue";
+  updateActiveColorFrame("blue");
 }
 
 function mGreenD(obj) {
@@ -76,6 +90,7 @@ function mGreenD(obj) {
 }
 function mGreenU(obj) {
   obj.style.backgroundColor = "green";
+  updateActiveColorFrame("green");
 }
 
 function mRedD(obj) {
@@ -87,12 +102,23 @@ function mRedD(obj) {
 
 function mRedU(obj) {
   obj.style.backgroundColor = "red";
+  updateActiveColorFrame("red");
+}
+
+/* ADD more colors
+function mOrangeD(obj) {
+    obj.style.backgroundColor = "#1ec5e5";
+    obj.innerHTML = "orange";
+    // obj.getElementById;
+    theInkColor = "orange";
 }
 
 function mUp(obj) {
     obj.style.backgroundColor="orange";
     obj.innerHTML="Orange";
 }
+*/
+
 
 
 
